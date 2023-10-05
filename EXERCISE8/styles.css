@@ -1,0 +1,38 @@
+.vodka {
+     text-transform: uppercase;
+     font-family: monospace;
+     text-align: center;
+     font-weight: 100;
+     font-size: 40px;
+     letter-spacing: 20px;
+     position: relative;
+   }
+   .vodka::after {
+     content: "";
+     display: block;
+     position: absolute;
+     bottom: -10px;
+     left: 25%;
+     width: 50%;
+     height: 5px;
+     background: plum;
+     border-radius: 40px;
+     animation: wavy 2.5s infinite linear;
+   }
+   @keyframes wavy {
+     0% {
+       transform: translateX(0);
+     }
+     25% {
+       transform: translateX(5px);
+     }
+     50% {
+       transform: translateX(-5px);
+     }
+     75% {
+       transform: translateX(5px);
+     }
+     100% {
+       transform: translateX(0);
+     }
+   }
